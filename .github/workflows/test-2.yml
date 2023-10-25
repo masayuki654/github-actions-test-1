@@ -1,0 +1,14 @@
+name: Release
+
+on:
+  workflow_dispatch:
+
+jobs:
+  start_repository_dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository dispatch
+        run: |
+          curl -X POST https://api.github.com/repos/masayuki654/github-actions-test-2/dispatches \
+          -H "Accept: application/vnd.github+json" \
+          -d '{"event_type":"echo_message","client_payload":{"message":"Hello world"}}'
