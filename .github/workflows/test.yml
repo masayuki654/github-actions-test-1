@@ -10,7 +10,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   call-workflow-in-another-repo:
-    uses: masayuki-inoue/github-actions-test-2/.github/workflows/reuse.yml@main
+    uses: masayuki654/github-actions-test-2/.github/workflows/reuse.yml@main
     with:
       friend_name: Masayuki
     # secrets:
