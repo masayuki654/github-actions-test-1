@@ -13,8 +13,8 @@ jobs:
     uses: masayuki-inoue/github-actions-test-2/.github/workflows/reuse.yml@main
     with:
       friend_name: Masayuki
-    secrets:
-      envPAT: ${{ secrets.envPAT }}
+    # secrets:
+    #   envPAT: ${{ secrets.envPAT }}
 
   show-outputs:
     needs:
